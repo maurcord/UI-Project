@@ -11,7 +11,7 @@ fetch(url)
         for (let i=0;i<4;i++){
             console.log(data.results[i])
             let newLi = document.createElement('li')
-           
+           // Put an Event Listener on the Content DIV, when clicked, all of the results are shown.
             newLi.addEventListener('click',(e)=>{
                 let content = document.querySelector(".content")
                 content.style.border = "5px solid grey"
@@ -26,6 +26,7 @@ fetch(url)
                 data.results[i].hyperdrive_rating;
             }
             )
+            // Li's text is changed to the results "Name" aka the Starships
             newLi.innerText = data.results[i].name
             console.log(newLi)
             let starShipListContainer = document.querySelector("ul");
@@ -36,21 +37,3 @@ fetch(url)
     .catch(err => console.log("something went wrong...", err));
 
 
-
-
-
-
-
-
-
-    // .then(function(data) {
-    //     for (let i=0;i<data.results.length;i++){
-    //         console.log(data.results[i])
-    //         let newLi = document.createElement('li')
-    //         newLi.innerText = "Name: " + data.results[i].name + ' Model: '+ data.results[i].model + ' Passengers: '+ data.results[i].passengers
-    //         console.log(newLi)
-    //         let starShipListContainer = document.querySelector(".starshipList");
-    //         starShipListContainer.appendChild(newLi)
-            
-    //     }
-    // })
