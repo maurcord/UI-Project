@@ -1,5 +1,5 @@
 //Defining url variable and linking API
-let url = "https://swapi.dev/api/starships"
+let url = "https://swapi.dev/api/starships/"
 
 // Getting data from API and returning the results with JSON.
 fetch(url)
