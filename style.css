@@ -1,0 +1,33 @@
+body {
+    background-color: white;
+}
+h1 {
+    color: black;
+}
+
+h5{
+    color: black;
+}
+
+.header-container { 
+    text-align: center;
+    display: flex;
+    color: white;
+    background-color: grey;
+} 
+.starshipList li {
+    display: inline;
+    padding: 10px;
+}
+.starshipList ul{
+   width: 100%;
+   background-color: grey;
+   text-align: center;
+}
+.content {
+    padding: 50px;
+    text-align: center;
+}
+ul {
+    padding: 20px;
+}
